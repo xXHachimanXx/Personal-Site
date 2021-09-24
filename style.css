@@ -3,4 +3,17 @@
     justify-content: space-between !important;
 }
 
+.container .main .main_content {
+    padding: 1.2rem 1.5rem !important;
+}
 
+.logo-puc {
+    width: auto;
+    height: 60px;
+    padding: 5px;
+}
+
+footer {
+    width: 100%;
+    background: #e3f2fd;
+}
