@@ -1,4 +1,75 @@
-.navbar .container  {
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600;
+}
+
+span {
+    font-weight: 600;
+}
+
+body::-webkit-scrollbar {
+    width: 10px
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+}
+
+@media (min-width: 600px) {
+    .container {
+        max-width: 600px;
+        width: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+        max-width: 1170px;
+    }
+}
+
+.link-dark {
+    color: white;
+    background: #343a40;
+    padding: 2px;
+    border-radius: 15%;
+}
+
+.navbar .container {
     background-color: #e3f2fd !important;
     justify-content: space-between !important;
 }
@@ -13,7 +84,104 @@
     padding: 5px;
 }
 
+.objetivos {
+    text-align: justify;
+}
+
+.social-media {
+    display: block;
+}
+
+.social-media-links {}
+
+.show-more-projects-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px auto;
+}
+
+.show-more-projects-button button {
+    width: 21%;
+    padding: 1px auto;
+}
+
+@media (max-width: 800px) {
+    .show-more-projects-button {
+        display: block;
+        justify-content: space-between;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .show-more-projects-button button {
+        width: 100%;
+        padding: 1px auto;
+    }
+
+    .logo-puc {
+        display: none;
+    }
+}
+
+.social-media-links a {
+    padding: 4px;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.experience-img {
+    width: 100%;
+    padding: .50rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    box-shadow: 1px 1px 1px #c1c1c1;
+    border-radius: .25rem;
+    height: auto;
+}
+
+.experience-row {
+    align-items: center;
+}
+
+.experience-row p {
+    margin: 0;
+}
+
+.experience-row span {
+    padding: 0.25rem auto;
+    font-size: medium;
+}
+
+.repositories {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e1e1e1;
+    z-index: 20;
+}
+
+.repository-title {
+    align-items: center;
+    width: 100%;
+}
+
+.repository-title a {
+    padding: 0 5px;
+    margin: 0 !important;
+    width: 100%;
+}
+
 footer {
     width: 100%;
     background: #e3f2fd;
+    align-items: center;
+    font-size: small;
 }
+
+/*
+claro: e6e6e6
+escuro: e1e1e1
+*/
