@@ -101,8 +101,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .show-more-projects-button button {
-    width: 21%;
+    width: 25%;
     padding: 1px auto;
+    font-size: small;
 }
 
 @media (max-width: 800px) {
