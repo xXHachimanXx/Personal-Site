@@ -20,7 +20,7 @@
 
 <body>
    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #cde8fb;">
          <div class="container">
             <a class="navbar-brand" href="#">Felipe A. Martins</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -34,12 +34,16 @@
                   <a class="nav-item nav-link" href="#">Experiência</a>
                   <a class="nav-item nav-link" href="#">Repositórios Github</a>
                   <a class="nav-item nav-link" href="#">Conteúdo</a>
+                  <form class="form-inline d-flex md-form form-sm mt-0 navbar-search-bar">
+                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                     <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                  </form>
                </div>
             </div>
 
-            <form class="form-inline d-flex justify-content-between md-form form-sm mt-0">
+            <form class="form-inline d-flex justify-content-between md-form form-sm mt-0 search-bar">
                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+               <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
             </form>
          </div>
       </nav>
@@ -55,7 +59,11 @@
 
             <div class="row">
                <h1>Felipe Andrade Martins</h1>
-               <p class="objetivos"><strong>Objetivos: </strong> Sou um cara apaixonado por tecnologia e sempre estou buscando aprender cada vez mais sobre essa área tão vasta. Tive a oportunidade de conhecer diversas linguagens de programação como Java, C/C++, Python, Javascript, Go, entre outras. Tenho experiência tanto com back-end quanto com front-end e a linguagem que eu tenho mais afinidade é Java. Atualmente, estou interessado em oportunidades para trabalhar com Back-end e DevOps.</p>
+               <p class="objetivos"><strong>Objetivos: </strong> Sou um cara apaixonado por tecnologia e sempre estou
+                  buscando aprender cada vez mais sobre essa área tão vasta. Tive a oportunidade de conhecer diversas
+                  linguagens de programação como Java, C/C++, Python, Javascript, Go, entre outras. Tenho experiência
+                  tanto com back-end quanto com front-end e a linguagem que eu tenho mais afinidade é Java. Atualmente,
+                  estou interessado em oportunidades para trabalhar com Back-end e DevOps.</p>
             </div>
 
             <div class="row social-media">
@@ -74,58 +82,68 @@
       </div>
 
       <section>
-         <div class="d-flex mt-5">
+         <div class="d-flex mt-5 justify-content-between flex-wrap ">
             <h2>Projetos</h2>
 
-            <div class="ml-auto">
-               <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Categoria: Todos
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                     <li><a class="dropdown-item" href="#">Faculdade</a></li>
-                     <li><a class="dropdown-item" href="#">Bootcamps</a></li>
-                     <li><a class="dropdown-item" href="#">Eventos</a></li>
-                  </ul>
-               </div>
+            <div class="dropdown">
+               <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Categoria: Todos
+               </button>
+               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Todos</a></li>
+                  <li><a class="dropdown-item" href="#">Faculdade</a></li>
+                  <li><a class="dropdown-item" href="#">Bootcamps</a></li>
+                  <li><a class="dropdown-item" href="#">Eventos</a></li>
+               </ul>
             </div>
          </div>
 
          <div class="d-flex mt-3 flex-wrap justify-content-between">
             <div class="card mt-3" style="width: 15rem;">
-               <img class="card-img-top" src="imagens/ecoleta-logo.png" alt="Card projeto Ecoleta">
-               <div class="card-body">
+               <img class="card-img-top project-image" style="padding: 1rem;" src="imagens/ecoleta-logo.png"
+                  alt="Card projeto Ecoleta">
+               <div class="card-body d-flex flex-column justify-content-between">
                   <h5 class="card-title">Ecoleta</h5>
-                  <p class="card-text">Marketplace de resíduos recicláveis desenvolvido durante a Next Level Week 1.0 da Rocketseat.</p>
-                  <a href="https://github.com/xXHachimanXx/Ecoleta" target="_blank" class="btn btn-primary">Ir para o projeto</a>
+                  <p class="card-text">Marketplace de resíduos recicláveis desenvolvido durante a Next Level Week 1.0 da
+                     Rocketseat.</p>
+
+                  <a href="https://github.com/xXHachimanXx/Ecoleta" target="_blank" class="btn btn-primary">Ir para o
+                     projeto</a>
                </div>
             </div>
 
             <div class="card mt-3" style="width: 15rem;">
-               <img class="card-img-top" src="imagens/ecoleta-logo.png" alt="Card projeto Ecoleta">
-               <div class="card-body">
-                  <h5 class="card-title">Ecoleta</h5>
-                  <p class="card-text">Marketplace de resíduos recicláveis desenvolvido durante a Next Level Week 1.0 da Rocketseat.</p>
-                  <a href="https://github.com/xXHachimanXx/Ecoleta" target="_blank" class="btn btn-primary">Ir para o projeto</a>
+               <img class="card-img-top project-image"
+                  src="imagens/assembler-abstract-program-source-binary-260nw-561382639.jpg" alt="Card projeto Ecoleta">
+               <div class="card-body d-flex flex-column justify-content-between">
+                  <h5 class="card-title">Compiler project for the L lang</h5>
+                  <p class="card-text">Este é um compilador para a linguagem L, uma linguagem artificial da disciplina
+                     Compiladores.</p>
+                  <a href="https://github.com/xXHachimanXx/Compiler-project-for-the-L-lang" target="_blank"
+                     class="btn btn-primary">Ir para o projeto</a>
                </div>
             </div>
 
             <div class="card mt-3" style="width: 15rem;">
-               <img class="card-img-top" src="imagens/ecoleta-logo.png" alt="Card projeto Ecoleta">
-               <div class="card-body">
-                  <h5 class="card-title">Ecoleta</h5>
-                  <p class="card-text">Marketplace de resíduos recicláveis desenvolvido durante a Next Level Week 1.0 da Rocketseat.</p>
-                  <a href="https://github.com/xXHachimanXx/Ecoleta" target="_blank" class="btn btn-primary">Ir para o projeto</a>
+               <img class="card-img-top project-image" src="imagens/SPRING-BOOT.png" alt="Card projeto Ecoleta">
+               <div class="card-body d-flex flex-column justify-content-between">
+                  <h5 class="card-title">People Management API</h5>
+                  <p class="card-text">API REST com Spring Boot para registrar e gerenciar pessoas em uma organização.
+                  </p>
+                  <a href="https://github.com/xXHachimanXx/People-Management-API" target="_blank"
+                     class="btn btn-primary">Ir para o projeto</a>
                </div>
             </div>
 
             <div class="card mt-3" style="width: 15rem;">
-               <img class="card-img-top" src="imagens/ecoleta-logo.png" alt="Card projeto Ecoleta">
-               <div class="card-body">
-                  <h5 class="card-title">Ecoleta</h5>
-                  <p class="card-text">Marketplace de resíduos recicláveis desenvolvido durante a Next Level Week 1.0 da Rocketseat.</p>
-                  <a href="https://github.com/xXHachimanXx/Ecoleta" target="_blank" class="btn btn-primary">Ir para o projeto</a>
+               <img class="card-img-top project-image" src="imagens/gas-icon-6148.png" alt="Card projeto Ecoleta">
+               <div class="card-body d-flex flex-column justify-content-between">
+                  <h5 class="card-title">Sistema de Preços com Socket</h5>
+                  <p class="card-text">Sistema para enviar o preço de vários postos de combustíveis e requisitar o preço
+                     mais barato em uma dada região.</p>
+                  <a href="https://github.com/xXHachimanXx/Sistema-de-Precos-com-Socket" target="_blank"
+                     class="btn btn-primary">Ir para o projeto</a>
                </div>
             </div>
 
@@ -151,7 +169,9 @@
             <div class="col-12 col-sm-12 col-md-6">
 
                <h5>Estagiário</h5>
-               <p>Fui designado a trabalhar no desenvolvimento do sistema Sigpri (Sistema Integrado de Gestão Prisional) que visa gerir todo ciclo de vida de indivíduos privados de liberdade no Estado de Minas Gerais. Estou tendo a oportunidade trabalhar tanto com o frontend (RichFaces) quanto com o backend (Java).</p>
+               <p>Fui designado a trabalhar no desenvolvimento do sistema Sigpri (Sistema Integrado de Gestão Prisional)
+                  que visa gerir todo ciclo de vida de indivíduos privados de liberdade no Estado de Minas Gerais. Estou
+                  tendo a oportunidade trabalhar tanto com o frontend (RichFaces) quanto com o backend (Java).</p>
                <span>Período: 09/2019 até o momento</span>
             </div>
          </div>
@@ -187,12 +207,14 @@
             <div class="repository col-12 col-sm-12 col-md-4 my-3">
                <div class="repository-details">
                   <h4 class="repository-title">
-                     <a href="https://github.com/xXHachimanXx/Batalha-Naval-com-Socket" alt="Github" target="_blank" class="link-dark"><i
-                           data-feather="folder"></i></a>
+                     <a href="https://github.com/xXHachimanXx/Batalha-Naval-com-Socket" alt="Github" target="_blank"
+                        class="link-dark"><i data-feather="folder"></i></a>
                      <span>Batalha Naval com Socket</span>
                   </h4>
                   <p> <strong> Sobre: </strong>
-                     O principal objetivo do projeto é praticar a programação com a biblioteca socket usando o protocolo TCP. O projeto consiste em desenvolver o jogo batalha naval para o paradigma cliente-servidor. Esta versão funciona com apenas um cliente conectado.</p>
+                     O principal objetivo do projeto é praticar a programação com a biblioteca socket usando o protocolo
+                     TCP. O projeto consiste em desenvolver o jogo batalha naval para o paradigma cliente-servidor. Esta
+                     versão funciona com apenas um cliente conectado.</p>
                   <span>Atualizado em 02/09/2021</span>
                </div>
             </div>
@@ -200,11 +222,15 @@
             <div class="repository col-12 col-sm-12 col-md-4 my-3">
                <div class="repository-details">
                   <h4 class="repository-title">
-                     <a href="https://github.com/xXHachimanXx/Qiskit-Global-Summer-School-2020" alt="Github" target="_blank" class="link-dark"><i
-                           data-feather="folder"></i></a>
+                     <a href="https://github.com/xXHachimanXx/Qiskit-Global-Summer-School-2020" alt="Github"
+                        target="_blank" class="link-dark"><i data-feather="folder"></i></a>
                      <span>Qiskit Global Summer School 2020</span>
                   </h4>
-                  <p> <strong> Sobre: </strong>O Qiskit Global Summer School é um evento de duas semanas para capacitar a próxima geração de cientistas e desenvolvedores quânticos com o conhecimento para explorar aplicações quânticas por conta própria. É uma sequência única que leva os alunos do nível iniciante à compreensão da física dos dispositivos supercondutores e à solução de problemas de química quântica em um computador quântico.</p>
+                  <p> <strong> Sobre: </strong>O Qiskit Global Summer School é um evento de duas semanas para capacitar
+                     a próxima geração de cientistas e desenvolvedores quânticos com o conhecimento para explorar
+                     aplicações quânticas por conta própria. É uma sequência única que leva os alunos do nível iniciante
+                     à compreensão da física dos dispositivos supercondutores e à solução de problemas de química
+                     quântica em um computador quântico.</p>
                   <span>Atualizado em 02/09/2021</span>
                </div>
             </div>
@@ -212,8 +238,8 @@
             <div class="repository col-12 col-sm-12 col-md-4 my-3">
                <div class="repository-details">
                   <h4 class="repository-title">
-                     <a href="https://github.com/xXHachimanXx/Multithreading-Socket-Internet-Banking" alt="Github" target="_blank" class="link-dark"><i
-                           data-feather="folder"></i></a>
+                     <a href="https://github.com/xXHachimanXx/Multithreading-Socket-Internet-Banking" alt="Github"
+                        target="_blank" class="link-dark"><i data-feather="folder"></i></a>
                      <span>Multithreading Socket Internet Banking</span>
                   </h4>
                   <p class="ml-auto"> <strong>Sobre:</strong> Apenas um TCP Server para Internet Banking.</p>
@@ -242,22 +268,26 @@
                <iframe src="https://www.youtube.com/embed/ci1PJexnfNE" frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
-               <div class="card-body">
+               <div class="card-body d-flex flex-column justify-content-between">
                   <h5 class="card-title">Why C is so Influential - Computerphile</h5>
-                  <p class="card-text">Professor Brailsford é um grande fã da linguagem C e ele explica o motivo dela ser tão influente.</p>
-                  <a href="https://www.youtube.com/watch?v=ci1PJexnfNE" target="_blank" class="btn btn-primary">Assistir no YouTube</a>
+                  <p class="card-text">Professor Brailsford é um grande fã da linguagem C e ele explica o motivo dela
+                     ser tão influente.</p>
+                  <a href="https://www.youtube.com/watch?v=ci1PJexnfNE" target="_blank" class="btn btn-primary">Assistir
+                     no YouTube</a>
                </div>
             </div>
 
-            
+
             <div class="card mt-3" style="width: 15rem;">
                <iframe src="https://www.youtube.com/embed/HmMNKdHmqC4" frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
-               <div class="card-body">
+               <div class="card-body d-flex flex-column justify-content-between">
                   <h5 class="card-title">Montando ambiente produtivo para desenvolvimento e WSL/Docker</h5>
-                  <p class="card-text">Tutorial básico para montar um ambiente WSL eficiente para trabalhar sem dor de cabeça com Docker.</p>
-                  <a href="https://www.youtube.com/watch?v=HmMNKdHmqC4" target="_blank" class="btn btn-primary">Assistir no YouTube</a>
+                  <p class="card-text">Tutorial básico para montar um ambiente WSL eficiente para trabalhar sem dor de
+                     cabeça com Docker.</p>
+                  <a href="https://www.youtube.com/watch?v=HmMNKdHmqC4" target="_blank" class="btn btn-primary">Assistir
+                     no YouTube</a>
                </div>
             </div>
 
@@ -265,10 +295,12 @@
                <iframe src="https://www.youtube.com/embed/J1vcKQw8zFY" frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
-               <div class="card-body">
+               <div class="card-body d-flex flex-column justify-content-between">
                   <h5 class="card-title">Docker para você nunca mais esquecer</h5>
-                  <p class="card-text">Nessa live você entenderá os principais conceitos sobre containers, Docker e todo seu ecossistema.</p>
-                  <a href="https://www.youtube.com/watch?v=J1vcKQw8zFY" target="_blank" class="btn btn-primary">Assistir no YouTube</a>
+                  <p class="card-text">Nessa live você entenderá os principais conceitos sobre containers, Docker e todo
+                     seu ecossistema.</p>
+                  <a href="https://www.youtube.com/watch?v=J1vcKQw8zFY" target="_blank" class="btn btn-primary">Assistir
+                     no YouTube</a>
                </div>
             </div>
 
@@ -276,14 +308,16 @@
                <iframe src="https://www.youtube.com/embed/9WwYO1Jtr7Y" frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
-               <div class="card-body">
+               <div class="card-body d-flex flex-column justify-content-between">
                   <h5 class="card-title">O Problema de 1 MILHÃO de DÓLARES</h5>
-                  <p class="card-text">Este vídeo descreve um dos problemas do milênio mais difíceis de serem resolvidos, mas que tem consequências muito importantes para a humanidade.</p>
-                  <a href="https://www.youtube.com/watch?v=9WwYO1Jtr7Y" target="_blank" class="btn btn-primary">Assistir no YouTube</a>
+                  <p class="card-text">Este vídeo descreve um dos problemas do milênio mais difíceis de serem
+                     resolvidos, mas que tem consequências muito importantes para a humanidade.</p>
+                  <a href="https://www.youtube.com/watch?v=9WwYO1Jtr7Y" target="_blank" class="btn btn-primary">Assistir
+                     no YouTube</a>
                </div>
             </div>
 
-            
+
          </div>
 
          <div class="show-more-projects-button">

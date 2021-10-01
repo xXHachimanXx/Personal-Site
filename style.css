@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #f6f6f6;
+    background-color: #F0F0F5;
 }
 
 a {
@@ -20,6 +20,22 @@ h5 {
 
 span {
     font-weight: 600;
+}
+
+header {
+    align-items: center;
+}
+.navbar-search-bar {
+    display: none !important;
+}
+
+@media(max-width:767px) {
+    .navbar-search-bar {
+        display: inline !important;
+    }
+    .search-bar {
+        display: none !important;
+    }
 }
 
 body::-webkit-scrollbar {
@@ -67,11 +83,6 @@ body::-webkit-scrollbar-thumb {
     background: #343a40;
     padding: 2px;
     border-radius: 15%;
-}
-
-.navbar .container {
-    background-color: #e3f2fd !important;
-    justify-content: space-between !important;
 }
 
 .container .main .main_content {
@@ -122,6 +133,15 @@ body::-webkit-scrollbar-thumb {
     .logo-puc {
         display: none;
     }
+}
+
+.project-image {
+    width: 15rem;
+    height: 15rem;
+}
+
+.card-body a {
+    width: 100%;
 }
 
 .social-media-links a {
@@ -177,7 +197,7 @@ body::-webkit-scrollbar-thumb {
 
 footer {
     width: 100%;
-    background: #e3f2fd;
+    background: #cde8fb;
     align-items: center;
     font-size: small;
 }
