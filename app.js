@@ -15,6 +15,8 @@ function setFields() {
     document.getElementById('auth-name').text = data.name;
     document.getElementById('page-title').text = data.name;
     document.getElementById('main-title').innerHTML = data.name;
+    document.getElementById('link-main-title').href = data.html_url;
+    document.getElementById('avatar-image').src = data.avatar_url;
 
     document.getElementById('github-info-folowers').innerHTML = "followers: " + data.followers;
     document.getElementById('github-info-following').innerHTML = "following: " + data.following;

@@ -7,7 +7,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 h1,
@@ -78,6 +78,15 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+.link-main-title {
+    text-decoration: none !important;
+    color: #343a40 !important;
+}
+
+.link-main-title :hover {
+    color: black !important;
+    transition: all 0.2s;
+}
 .link-dark {
     color: white;
     background: #343a40;
