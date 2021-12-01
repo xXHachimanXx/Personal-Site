@@ -99,6 +99,16 @@ body::-webkit-scrollbar-thumb {
     text-align: justify;
 }
 
+.link-info {
+    color: #6c757d;
+    margin-right: 1.2rem;
+    text-decoration: none;
+}
+
+.github-info {
+    margin-bottom: 1.1rem;
+}
+
 .social-media {
     display: block;
 }

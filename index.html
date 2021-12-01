@@ -15,14 +15,14 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
 
-   <title>Felipe Andrade Martins</title>
+   <title id="page-title">Felipe Andrade Martins</title>
 </head>
 
 <body>
    <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #cde8fb;">
          <div class="container">
-            <a class="navbar-brand" href="#">Felipe A. Martins</a>
+            <a class="navbar-brand" id="auth-name" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -58,7 +58,7 @@
          <div class="col-12 col-sm-12 col-md-6 main-info">
 
             <div class="row">
-               <h1>Felipe Andrade Martins</h1>
+               <h1 id="main-title">Felipe Andrade Martins</h1>
                <p class="objetivos"><strong>Objetivos: </strong> Sou um cara apaixonado por tecnologia e sempre estou
                   buscando aprender cada vez mais sobre essa área tão vasta. Tive a oportunidade de conhecer diversas
                   linguagens de programação como Java, C/C++, Python, Javascript, Go, entre outras. Tenho experiência
@@ -67,11 +67,20 @@
             </div>
 
             <div class="row social-media">
+               <div class="github-info">
+                  <h4>Github Info</h4>
+                  <a id="github-info-folowers" class="link-info" href="https://github.com/xXHachimanXx?tab=followers" target="_blank" >
+                     followers:
+                  </a>
+                  <a id="github-info-following" class="link-info" href="https://github.com/xXHachimanXx?tab=following" target="_blank" >
+                     following: 
+                  </a>
+               </div>
                <h4>Redes Sociais</h4>
                <div class="social-media-links">
-                  <a href="https://github.com/xXHachimanXx" alt="Github" target="_blank" class="link-dark"><i
+                  <a id="link-github" href="https://github.com/xXHachimanXx" alt="Github" target="_blank" class="link-dark"><i
                         data-feather="github"></i></a>
-                  <a href="https://www.linkedin.com/in/felipe-andrade-a34092195/" alt="LinkedIn" target="_blank"
+                  <a id="link-linkedin" href="https://www.linkedin.com/in/felipe-andrade-a34092195/" alt="LinkedIn" target="_blank"
                      class="link-dark"><i data-feather="linkedin"></i></a>
                </div>
             </div>
@@ -358,6 +367,7 @@
    <script>
       feather.replace()
    </script>
+   
 
 
    <!-- Optional JavaScript -->
@@ -371,6 +381,8 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
    </script>
+
+   <script src="app.js"></script>
 </body>
 
 </html>
